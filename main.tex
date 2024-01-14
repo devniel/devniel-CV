@@ -88,6 +88,14 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeVisaStatusHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+    \textit{\small#5}
+}
 
 \newcommand{\resumeEducationHeading}[6]{
   \vspace{-2pt}\item
@@ -96,7 +104,6 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}
     \textit{\small#5}
-    \vspace{-5pt}
 }
 
 
@@ -149,30 +156,40 @@
     \faMapMarker \hspace{.5pt} {Paris, France}
 \end{center}
 
+%----------- About -----------
+\begin{center}
+Full-stack software engineering with experience at Criteo and IBM. Currently, interested in contributing to solutions for different industries using state-of-art technologies such as Generative AI and XR. Given my multi-stack experience, I'm open and able to learn quickly new tools and techniques.
+\end{center}
 %----------- EMPLOYMENT -----------
 \section{Employment}
-  \vspace{3pt}
+  \vspace{5pt}
   \resumeSubHeadingListStart
     \resumeSubheading
-    {Criteo}{Jan 2020 \textbf{--} present}
-    {Software Engineer II}{}
+    {Criteo}{CDI / Jan 2020 \textbf{--} present}
+    {Software Engineer II}{Paris, France}
+    \vspace{8pt}
 
-    \resumeSubSubheading{\textbf{Relook Analytics Module} | R\&D --- WebApps / Planning \& Reporting}{Criteo Paris}
+    \resumeSubSubheading{\textbf{Criteo Analytics} · React}{}
         \resumeItemListStart
-          \resumeItem{Development and maintenance of dashboards and reporting tools for Criteo's advertisers, allowing to track and measure the performance of advertising campaigns and understanding of customer behavior across all Criteo products. Technologies: Scala, C\#, React, TypeScript, MaterialUI, MariaDB, Vertica, Cypress and Jest.}
-          \resumeItem{Improved the development experience using Gradle, Node, Docker and bash scripts; reduced build processes time (Scala and Webpack), integrated dependencies (internal Node modules), ensured consistency with containerized environments for E2E testing (Docker with Criteo images), and automated workflows (NPS and Gradle tasks).}
-          \resumeItem{Contributed to the Relook Design System, a React implementation of the Criteo Design System, used across all our dashboards and other internal projects, powered by Storybook and MaterialUI.}
+          \resumeItem{Development and maintenance of dashboards and reporting tools for Criteo's advertisers, allowing to track and measure the performance of advertising campaigns and understanding of customer behavior across all Criteo products. Technologies: Scala, C\#, React, Angular, GraphQL, TypeScript, MaterialUI, MariaDB, Vertica, Cypress and Jest.}
+          \resumeItem{Improved the development experience using Gradle, Node, Docker and bash scripts; reduced build processes time (Scala and Webpack), integrated dependencies (internal Node modules), ensured consistency with containerized environments for E2E testing (Docker with Criteo images), and automated workflows (NPM scripts and Gradle tasks).}
+          \resumeItem{Contributed to the Relook Design System, a React implementation of the Criteo Design System with a catalog of components such as DatePicker, Table and Inputs used across our dashboards and some internal projects, built by using React, Storybook, Rollup and MaterialUI.}
           \resumeItem{Developed endpoints for the public analytics API using C\# and Criteo .NET stack
           \\[1.5pt] URL: {\href{https://developers.criteo.com/marketing-solutions/reference/getadsetreport}{\color{blue}https://developers.criteo.com/marketing-solutions/reference/getadsetreport}}
           }
           \resumeItemListEnd
-
-      \resumeSubSubheading{\textbf{Visual Search App} | R\&D --- CAIL / CAML Incubator }{Criteo Paris}
+    
+        \resumeSubSubheading{\textbf{Criteo Connect} · Next.js }{}
+        \resumeItemListStart
+          \resumeItem{Development of an internal social app to connect Criteo employees and visualize offices via a global map. Users can provide their workplace location, share more about themselves, add their interests and search colleagues with the same hobbies. The project started as a hackathon idea winner, then across 2023 an MVP was developed by volunteers and presented to the HR leaders. Technologies: Next.js 13, Gradle, React, Redux, Node, MariaDB, TypeORM, Leaflet, Stable Difussion, Object Storage, Python and GIS.}
+          \resumeItemListEnd
+      
+      \resumeSubSubheading{\textbf{Criteo Visual Search} · Next.js }{}
         \resumeItemListStart
           \resumeItem{Development of the Visual Search app user interface, an application to detect and search products found in an image input using different machine learning models. Technologies: Next.js, Gradle, React, Redux and Node.}
           \resumeItemListEnd
 
-      \resumeSubSubheading{\textbf{Developers Portal} | R\&D --- WebApps / Acquisition Channels}{Criteo Paris}
+      \resumeSubSubheading{\textbf{Criteo Developers} · Svelte }{}
       \resumeItemListStart
         \resumeItem{Development of the Criteo Developers portal, onboarding hundreds of clients and scoring 92/100 in Google Lighthouse stats for desktop; built with Svelte, applying responsive design, accessibility, and SEO techniques; including a build system to generate the snippets to export to the Readme platform.
         \\[1.5pt]
@@ -180,29 +197,27 @@
         }
       \resumeItemListEnd
 
-      \resumeSubSubheading{\textbf{Prestashop Plugin} | R\&D --- WebApps / Acquisition Channels}{Criteo Paris}
+      \resumeSubSubheading{\textbf{Criteo Prestashop Plugin} · Angular}{}
       \resumeItemListStart
         \resumeItem{Development of the WYSIWYG ad banner editor for the Criteo Prestashop plugin, providing 62 merchants an easy way to configure and launch their Criteo campaigns resulting on 35,9K , with the collaboration of the Product and UX team and under an Angular architecture with NGXS state management, including a banner preview screen-shooter tool using Puppeteer and NodeJS.}
         \resumeItem{Rewriting of the jQuery and smarty Criteo Prestashop plugin page into a new module for the Angular app using an architectural approach including UML assets with PlantUML, integrating the Vega-Lite (the visualization grammar and library being used) vanilla JavaScript library with Angular including charts accessibility.}
         \resumeItem{Implementation of new self-service solutions as new channels to engage clients, using Angular 9, RxJS, NGXS, Jest and Cypress; with code review processes, design guidance, test-driven development and the agile approach.}
       \resumeItemListEnd
 
-      \resumeSubSubheading{Other projects}{Criteo Paris}
+      \resumeSubSubheading{\textbf{Other projects} }{}
         \resumeItemListStart
-          \resumeItem{Contributing to Criteo Connect, internal social app to connect criteos around the world.}
           \resumeItem{Contributing to Creative Foundry, proposal to generate advertising banners using AI.}
           \resumeItem{Contributed to translation process, migrating projects' string interpolations (Angular, React) to the ICU MessageFormat.}
           \resumeItem{Contributed to VizSQL, a scala SQL parser.}
           \resumeItem{Promoting the usage of Next.js in internal projects, sharing Gradle templates to make it easy with the Criteo tech stack.}
         \resumeItemListEnd
 
-    \vspace{13pt}
-
     \resumeSubheading
     {IBM}{May 2014 \textbf{--} Dec 2019}
-    {Software Engineer}{}
+    {Software Engineer}{Lima, Perú}
+    \vspace{8pt}
 
-      \resumeSubSubheading{\textbf{IBM Decision Advisor} | Global Technology Services, Solutions, Delivery \& Transformation }{IBM USA (remote)}
+      \resumeSubSubheading{\textbf{IBM Decision Advisor}  · React}{}
         \resumeItemListStart
           \resumeItem{Implementation of the front-end software architecture to handle maintainability, reusability and data communication across the pages and components of the web app using React, Redux and GraphQL.}
           \resumeItem{Developed the Testing Automation roadmap and platform to improve the QA process using IBM DevOps, Travis and Testcafé, integrating it with the CI/CD pipeline.}
@@ -211,29 +226,27 @@
           }
         \resumeItemListEnd
 
-        \vspace{20pt}
-
-      \resumeSubSubheading{\textbf{SUNAT Sofía, government chatbot on web and Facebook Messenger} | Global Business Services}{IBM Perú}
+      \resumeSubSubheading{\textbf{SUNAT Sofia, government chatbot on web and Facebook Messenger} · React}{}
         \resumeItemListStart
           \resumeItem{Implemented the full-stack software architecture of Sofía, a government chat bot that helps citizens to solve questions about taxes, using React, Redux, Node.js, Socket.io, Redis, MongoDB and IBM Cloud.
           \\[1.5pt] URL: {\href{https://renta.sunat.gob.pe/personas/quienes-deben-declarar-el-impuesto-la-renta}{\color{blue}https://renta.sunat.gob.pe/personas/quienes-deben-declarar-el-impuesto-la-renta}}
           }
         \resumeItemListEnd
 
-      \resumeSubSubheading{\textbf{Arturito BCP, first banking chatbot in Perú available on Facebook Messenger} |  Global Business Services}{IBM Perú}
+      \resumeSubSubheading{\textbf{Arturito BCP, first banking chatbot in Perú available on Facebook Messenger} · Node.js}{}
         \resumeItemListStart
           \resumeItem{Implemented the front-end and back-end software architecture with speech-to-text features, analytics and integration with external system of records using Node.js, Facebook Messenger Platform and IBM Cloud services. 36K likes and more than two million banking operations from 2016 to 2020.
           \\[1.5pt] URL: {\href{https://www.facebook.com/ArturitoBCP/}{\color{blue}https://www.facebook.com/ArturitoBCP/}}
           }
         \resumeItemListEnd
 
-      \resumeSubSubheading{\textbf{PECSA GAS, SAP Mobile app connected to SAP ERP} |  Global Business Services}{IBM Perú}
+      \resumeSubSubheading{\textbf{PECSA GAS, SAP Mobile app connected to SAP ERP} · SAPUI5}{}
         \resumeItemListStart
           \resumeItem{Developed hybrid SAP mobile apps to support the sale and distribution of gas done by the PECSA carriers, the mobile solution included connection to SAP ERP (via SAP SMP services) and receipts printing via Bluetooth connection to Zebra printers. Other technologies provided by SAP where used such as SAP Kapsel and \textbf{SAPUI5} with OData and a customized Apache Cordova plugin for the Zebra printers connection.
           \\[1.5pt] URL: {\href{https://youtube.com/shorts/\_LhR6XTVP5E}{\color{blue}https://youtube.com/shorts/\_LhR6XTVP5E}}}
         \resumeItemListEnd
 
-      \resumeSubSubheading{Other projects}{IBM Perú}
+      \resumeSubSubheading{\textbf{Other projects} }{}
         \resumeItemListStart
           \resumeItem{Support for Hackathons organized and/or sponsored by IBM in Perú by mentoring or giving talks.}
           \resumeItem{Davivienda chatbots: using Node.js, React, ES6, MongoDB and IBM Cloud services.}
@@ -244,6 +257,8 @@
         \resumeItemListEnd
 
   \resumeSubHeadingListEnd
+
+\vspace{3pt}
 
 %----------- AWARDS & ACHIEVEMENTS -----------
 
@@ -283,27 +298,17 @@
 
   \resumeSubHeadingListEnd
 
-%----------- SKILLS -----------
+%----------- VISA STATUS -----------
 
-\section{Skills \& Languages}
-\vspace{2pt}
-\resumeSubHeadingListStart
-  \small{\item{
-      \textbf{Programming:}{ Typescript, JavaScript, Scala, C\#, Java, Python, PHP, CSS3, HTML5, SQL} \\ \vspace{3pt}
-      \textbf{Technologies:}{ React, Node, Svelte, Angular, RxJS, Playwright, NestJS, NGXS, Gerrit, PlantUML, UML, ES6,
-      styled-components, Redux, Webpack, Cypress, Testcafé, Travis, Docker, Jest, Mocha, GraphQL, Apollo, Sass,
-      Neo4j, MongoDB, PostgreSQL, MySQL, SAPUI5, XML, JSON, Git, Babel, NPM, Socket.IO, Redis, MQ, IBM Cloud, IBM
-      Watson Assistant, Messenger Bots, Web Bots, Sketch, Scrum. } \\ \vspace{3pt}
-      \textbf{Languages:}{ English (Fluent), French (Intermediate), Spanish (Native)}
-      
-      % \textbf{Frameworks}{: X, X, X} \\
-      % \textbf{Developer Tools}{: X, X, X} \\
-      % \textbf{Libraries}{: X, X, X} \\
-      % \textbf{Applications}{: X, X, X}
-  }}
+\section{Visa status}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \resumeVisaStatusHeading
+      {Passeport talent : Carte Bleue Européenne}{Paris, France}
+      {04/01/2024 - 03/01/2028}{}
+      {}
+      {}
 \resumeSubHeadingListEnd
-
-%----------- PROJECTS -----------
 
 %----------- EDUCATION -----------
 
@@ -312,29 +317,31 @@
   \resumeSubHeadingListStart
     \resumeEducationHeading
       {University of Lima}{Lima, Perú}
-      {B.S.E. in Systems Engineering. Top 20\%. \textbf{GPA: 15/20}}{Aug 2008 \textbf{--} Jun 2014}
-      {Trainee in the IT Department \& Research laboratory to develop an LMS using Play Framework 2.0 (Java, Scala).}
+      {Bachelor of Science in Systems Engineering. \textbf{GPA: 4.0}}{Aug 2008 \textbf{--} Jun 2014}
+      {Trainee in the IT Department \& Research office to develop a Learning Management System using Play Framework 2.0 (Java, Scala).}
       {}
   \resumeSubHeadingListEnd
+
+%----------- PROJECTS -----------
 
 \section{Other projects}
     \vspace{3pt}
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-      {\textbf{Message Formatter AI} $|$ \emph{\href{https://messageformatter.vercel.app/}{\color{blue}https://messageformatter.vercel.app/}}}{}
-        \resumeItemListStart
-          \resumeItem{An experiment of ICU MessageFormat generation using OpenAI ChatGPT.}
-        \resumeItemListEnd
-      
-      \resumeProjectHeading
-        {\textbf{Quechua.AI} $|$ \emph{\href{https://www.quechua.ai/}{\color{blue}https://www.quechua.ai/}}}{}
+        {\textbf{Tito XI - video created with generative AI (2023)} $|$ \emph{\href{https://www.youtube.com/watch?v=RQYhDdp8F2Q}{\color{blue}https://www.youtube.com/watch?v=RQYhDdp8F2Q}}}{}
           \resumeItemListStart
-            \resumeItem{An experiment to learn the quechua language by doing exercises generated by OpenAI ChatGPT.}
+            \resumeItem{Cinematic video created with generative AI technologies such as Midjourney Image generation, RunwayML Text/Image to Video and ElevenLabs Generative Voice; edited with Epidemic Sound and Davinci Resolve.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-      {\textbf{NestJS Typeorm Testing} $|$ \emph{\href{https://www.npmjs.com/package/@devniel/nestjs-typeorm-testing/}{\color{blue}https://www.npmjs.com/package/@devniel/nestjs-typeorm-testing/}}}{}
+      {\textbf{Message Formatter AI (2023)} $|$ \emph{\href{https://messageformatter.vercel.app/}{\color{blue}https://messageformatter.vercel.app/}}}{}
+        \resumeItemListStart
+          \resumeItem{An experiment of ICU MessageFormat generation using OpenAI ChatGPT.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+      {\textbf{NestJS Typeorm Testing (2019)} $|$ \emph{\href{https://www.npmjs.com/package/@devniel/nestjs-typeorm-testing/}{\color{blue}https://www.npmjs.com/package/@devniel/nestjs-typeorm-testing/}}}{}
         \resumeItemListStart
           \resumeItem{NPM module to provide testing utilities for NestJS/Typeorm.}
         \resumeItemListEnd
@@ -358,7 +365,7 @@
       \resumeProjectHeading
         {\textbf{Notephy (2012)}}{}
           \resumeItemListStart
-            \resumeItem{On-line whiteboard where users were able to do handwritten notes, share and replay them. HTML5, JavaScript, Node, MongoDB, AWS, Facebook API, Canvas.}
+            \resumeItem{On-line whiteboard for sharing and replaying handwritten notes. HTML5, JavaScript, Node, MongoDB, AWS, Facebook API, Canvas.}
           \resumeItemListEnd
 
       \resumeProjectHeading
@@ -369,5 +376,25 @@
       
     \resumeSubHeadingListEnd
 
+%----------- SKILLS -----------
+
+\section{Skills \& Languages}
+\vspace{2pt}
+\resumeSubHeadingListStart
+  \small{\item{
+      \textbf{Programming languages:}{ Typescript, JavaScript, Scala, C\#, Java, Python, PHP, CSS3, HTML5, SQL, LaTeX} \\ \vspace{3pt}
+      \textbf{Frameworks, libraries and tools:}{ Next.js, React, Node, Svelte, Angular, RxJS, Playwright, NestJS, NGXS, Gerrit, PlantUML, UML,
+      styled-components, Redux, Webpack, Cypress, Testcafé, Travis, Docker, Jest, Mocha, GraphQL, Apollo, Sass,
+      Neo4j, MongoDB, PostgreSQL, MySQL, SAPUI5, XML, JSON, Git, Babel, NPM, Socket.IO, Redis, MQ, IBM Cloud, IBM
+      Watson Assistant, Facebook Messenger Chatbots, Web Chatbots, Davinci Resolve, Adobe Photoshop.} \\ \vspace{3pt}
+      \textbf{AI related:} {Stable Diffusion, Midjourney, OpenAI API, RunwayML, Video production with AI.} \\ \vspace{3pt}
+      \textbf{Languages:}{ English (Fluent), French (Intermediate), Spanish (Native)}
+      
+      % \textbf{Frameworks}{: X, X, X} \\
+      % \textbf{Developer Tools}{: X, X, X} \\
+      % \textbf{Libraries}{: X, X, X} \\
+      % \textbf{Applications}{: X, X, X}
+  }}
+\resumeSubHeadingListEnd
 
 \end{document}
